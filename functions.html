@@ -16,5 +16,29 @@ context. When you refer to the this inside such a function you refer directly to
 2. Invocation as a method
 
 
+This time first we need to create javascript object with at least one function inside. Next type object reference and run
+function as a normal in first example but on our object. The bigest difference between first and second execution type is
+with function context. In second example this is our object. In different way - everything within { } is our context
+(our context is 'this')
+Thanks to above javascript can be used as an object oriented language.
+
+3 Invocation as a constructor
+
+To invoke function as a constructor you just need to run your function with new keyword
+
+See this example:
+
+
+
+Why it's different than other types? Guess what - again difference is with context of our function. When you
+invoke it as a constructor few things are happening:
+- Empty object is created
+- Our Empty object is passed to our function as a this and becomes function context
+- in case of lack return statement this is returned
+
+
+Last method is with invoking apply() and call() methods and I'm going to cover it in separate blog post
+
+
 </body>
 
